@@ -1,8 +1,22 @@
 body{
-
-background-color: white;
-margin: 0;
-padding: 0;
-font-family: Arial, Helvetica, sans-serif;
-
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.counter{   
+    background-color: white;
+    border : 2px solid lightgray;
+    padding: 20px;
+    border-radius: 20px; 
+    text-align: center;
+}
+.title, .count{
+    color: black;
+}
+.btn1{   
+    background-color: green;
+}
+.btn2{
+    margin-left: 20px;
+    background-color: red;
 }

@@ -5,13 +5,15 @@ export function Counter() {
 
     return(
         <div className="counter">
-        <button onClick={()=>setCount(count+1)}>
+         <h1 className="title">Counter App</h1>
+         <h1 className="count">{count}</h1>
+        <button className="btn1" onClick={()=>setCount(count+1)}>
         Increment 
         </button >
-        <button onClick={()=>setCount(count-1)} disabled={count===0 ? true : false}>
+        <button className="btn2" onClick={()=>setCount(count-1)} disabled={count===0 ? true : false}>
         Decrement
         </button >
-        <h1>Counter:{count}</h1>
+       
         </div>
     );
     }
