@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: black;
-}
+} 
 .counter{   
     background-color: white;
     border : 2px solid lightgray;
