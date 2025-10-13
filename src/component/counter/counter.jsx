@@ -4,6 +4,7 @@ export function Counter() {
   const[count,setCount]=useState(0)
 
     return(
+      <div className="container">
         <div className="counter">
          <h1 className="title">Counter App</h1>
          <h1 className="count">{count}</h1>
@@ -14,6 +15,7 @@ export function Counter() {
         Decrement
         </button >
        
+        </div>
         </div>
     );
     }

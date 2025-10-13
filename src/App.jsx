@@ -1,18 +1,18 @@
-// import './App.css'
-// import { BackgroundChange } from "./component/Background color changer/BackgroundChange"
+ import './App.css'
+// import {Card} from "./component/Card/Card"
 // import { Counter } from "./component/counter/counter"
-// import { Tempature } from "./component/Tempature app/Temprature"
- import { Parent } from "./component/Name passing/Parent"
+import { BackgroundChange } from './component/Background color changer/BackgroundChange'
 function App() {
 
   return (
     <>
-    {/* <Counter/> */}
-    {/* <Tempature/> */}
-    {/* <BackgroundChange/> */}
-    <Parent/>
-  
+    <BackgroundChange/>
     </>
+    //     <div className="App">
+    //   <Card />
+    //   <Card  user="Aman"/>
+    // </div>
+
   )
 }
 
