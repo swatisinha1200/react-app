@@ -1,24 +1,29 @@
 import { useState } from "react";
 import { TemperatureConverter } from "./TemperatureConverter";
+import "./Temprature.css";
+
 export function Tempature() {
-      const [celsius, setCelsius] = useState(0);
+  const [celsius, setCelsius] = useState(0);
 
-    return (        
-        <div>
-          <div style={{ padding: "20px" }}>
-      <h1>Temperature Converter</h1>
-      <label>
-        Celsius:
-        <input
-          type="number"
-          value={celsius}
-          onChange={(e) => setCelsius(e.target.value)}
-        />
-      </label>
+  return (
+    <div className="container">
+      <div className="Box">
+        <h1>Temperature Converter</h1>
 
-      <TemperatureConverter celsius={celsius} />
-    </div>
+        <div className="label-input">
+          <label htmlFor="celsius">Celsius</label>
+          <input
+            id="celsius"
+            type="number"
+            value={celsius}
+            onChange={(e) => setCelsius(e.target.value)}
+          />
+        </div>
+
+        <div className="output-box">
+          <TemperatureConverter celsius={celsius} />
+        </div>
+      </div>
     </div>
   );
 }
-
