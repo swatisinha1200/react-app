@@ -1,8 +1,8 @@
 import "./Temprature.css";
 
-export function TemperatureConverter({ celsius }) {
-  const fahrenheit = (celsius * 9) / 5 + 32;
-  const kelvin = parseFloat(celsius) + 273.15;
+export function TemperatureConverter( props ) {
+  const fahrenheit = (props.celsius * 9) / 5 + 32;
+  const kelvin = parseFloat(props.celsius) + 273.15;
 
   return (
     <>
