@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 export const Toggle = () => {
   const [mode, setMode] = useState("light");
-
+ 
   function toggleMode() {
                 if (mode === "light") {
               setMode("dark");  
@@ -23,8 +23,7 @@ export const Toggle = () => {
           type="checkbox"
           role="switch"
           id="switchCheckDefault"
-          onClick={() => {toggleMode()
-          }}
+          onClick={toggleMode}
         ></input>
         <label class="form-check-label" for="switchCheckDefault">
         {mode==="light"? "Light Mode":"Dark Mode"}
